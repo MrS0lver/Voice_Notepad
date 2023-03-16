@@ -5,7 +5,7 @@ import speech_recognition as sr
 win = Tk()
 win.geometry("500x600")
 
-def insert():
+def insert(event):
     recocnizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening....")
@@ -20,9 +20,9 @@ def insert():
             print("Not Understanding")
     win.update()
          
-btn = ttk.Button(win,text="Speak",command=insert)
+
 
 writter = Text(win)
 writter.pack()
-# win.bind('<Escape>',insert)
+win.bind('<Escape>',insert)
 win.mainloop()
