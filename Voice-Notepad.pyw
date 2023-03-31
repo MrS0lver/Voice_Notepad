@@ -6,7 +6,7 @@ win = Tk()
 win.title("Voice-Notepad")
 win.geometry("600x600")
 win.config(bg="white")
-win.iconbitmap("icon.ico")
+# win.iconbitmap("icon.ico")
 
 def full_screen(event):
     win.geometry("766x784+761+0")
