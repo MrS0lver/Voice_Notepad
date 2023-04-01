@@ -35,6 +35,7 @@ def insert(event):
     
          
 
+
 intro = Label(text="",font=("Elephant",15),bg="white")
 intro.pack()
 writter = Text(win,height=40,width=75,font=("consolas",15))
@@ -42,3 +43,4 @@ writter.pack()
 win.bind('<Control-f>',full_screen)
 win.bind('<Escape>',insert)
 win.mainloop()
+
